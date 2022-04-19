@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="tableOperations.js"></script>
+    <script type="module" src="dragAndDrop.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+<hr>
+<h2 style="text-align: center" id="header"></h2>
+<hr>
+
+<table style="margin: auto">
+    <thead>
+        <tr>
+            <td>LP</td>
+            <td>Nazwa</td>
+            <td>Ilosc</td>
+            <td>Cena</td>
+            <td>Suma</td>
+            <td style="visibility: hidden">
+                <button>Edytuj</button>
+            </td>
+            <td style="visibility: hidden">
+                <button>Usun</button>
+            </td>
+        </tr>
+    </thead>
+    <tbody class="container">
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td/>
+            <td><input type="text" id="nameValue" placeholder="Nazwa"></td>
+            <td><input type="number" id="amountValue" placeholder="Ilosc"></td>
+            <td><input type="number" id="priceValue" placeholder="Cena"></td>
+            <td><button id="addProduct">Dodaj</button></td>
+        </tr>
+        <tr>
+            <td/>
+            <td/>
+            <td/>
+            <td>Razem:</td>
+            <td id="value">0</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+</body>
+
+</html>
